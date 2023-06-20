@@ -1,32 +1,55 @@
 # Text-Search
 
-## DictateMD
+Text-Search is a project developed under the DictateMD organization. It allows users to search for specific text within a dataset.
 
 ## Steps to run the project
 
-- Clone the project
-- After cloning the repository, go to the project directory and run the following command in the terminal
+1. Clone the project repository to your local machine.
 
-```bash
+2. Navigate to the project directory in the terminal.
 
-# Go to client directory
-cd client
-# Install the dependencies
-npm install
-# Run the client
-npm start
+3. ### Client
 
+   - Go to the client directory:
+     ```bash
+     cd client
+     ```
 
-## Go to server directory
-cd server
-# Install the dependencies
-npm install
-# Run the server
-node index.js
-```
+   - Install the dependencies:
+     ```bash
+     npm install
+     ```
 
-## Note
-Before running the server, make sure you have created a .env.local file in the server directory and add the following variables in it
-```bash
-DATABASE_URL=<YOUR MONGODB URL>
-```
+   - Run the client:
+     ```bash
+     npm start
+     ```
+
+4. ### Server
+
+   - Go to the server directory:
+     ```bash
+     cd server
+     ```
+
+   - Install the dependencies:
+     ```bash
+     npm install
+     ```
+
+   - Before running the server, make sure you have created a `.env.local` file in the server directory and add the following variables in it:
+     ```bash
+     DATABASE_URL=<YOUR_MONGODB_URL>
+     ```
+
+   - Run the server:
+     ```bash
+     node index.js
+     ```
+
+   Note: Replace `<YOUR_MONGODB_URL>` with your actual MongoDB connection URL.
+
+5. Open a web browser and visit `http://localhost:3000` to access the Text-Search application.
+
+Feel free to explore and search for specific text within the dataset!
+
